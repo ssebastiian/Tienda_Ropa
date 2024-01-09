@@ -1,10 +1,12 @@
+'use client'
+
 import Head from 'next/head'
-import React, { FC } from 'react'
+import React, { FC, ReactNode } from 'react'
 import Navbar from '../ui/Navbar';
 import {SideMenu} from '../ui/SideMenu';
 
 interface Props {
-    children: React.ReactNode;
+    children: ReactNode;
     title: string;
     pageDescription: string;
     imageFullUrl?: string;
